@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/MiniMapLayers/Form1.cs) (VB: [Form1.vb](./VB/MiniMapLayers/Form1.vb))
+* [Program.cs](./CS/MiniMapLayers/Program.cs) (VB: [Program.vb](./VB/MiniMapLayers/Program.vb))
+<!-- default file list end -->
 # How to customize mini map layers
 
 
