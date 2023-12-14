@@ -15,8 +15,8 @@ This example demonstrates how to customize mini map layers.<br />For this, crea
 
 ## Documentation
 
-[Mini Map](https://docs.devexpress.com/WindowsForms/17683/controls-and-libraries/map-control/visual-elements/mini-map)
+* [Mini Map](https://docs.devexpress.com/WindowsForms/17683/controls-and-libraries/map-control/visual-elements/mini-map)
 
 ## More Examples 
 
-[Map for WinForms - How to Create Map Items Based on Data From an XML File](https://github.com/DevExpress-Examples/winforms-map-bind-to-xml-data)
+* [Map for WinForms - How to Create Map Items Based on Data From an XML File](https://github.com/DevExpress-Examples/winforms-map-bind-to-xml-data)
