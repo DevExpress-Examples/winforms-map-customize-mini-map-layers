@@ -1,5 +1,7 @@
-﻿Namespace MiniMapLayers
-    Partial Public Class Form1
+Namespace MiniMapLayers
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,28 +12,28 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim imageTilesLayer1 As New DevExpress.XtraMap.ImageLayer()
-            Dim bingMapDataProvider1 As New DevExpress.XtraMap.BingMapDataProvider()
-            Dim colorListLegend1 As New DevExpress.XtraMap.ColorListLegend()
-            Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+            Dim imageTilesLayer1 As DevExpress.XtraMap.ImageLayer = New DevExpress.XtraMap.ImageLayer()
+            Dim bingMapDataProvider1 As DevExpress.XtraMap.BingMapDataProvider = New DevExpress.XtraMap.BingMapDataProvider()
+            Dim colorListLegend1 As DevExpress.XtraMap.ColorListLegend = New DevExpress.XtraMap.ColorListLegend()
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MiniMapLayers.Form1))
             Me.mapControl = New DevExpress.XtraMap.MapControl()
             Me.imageCollection1 = New DevExpress.Utils.ImageCollection(Me.components)
-            DirectCast(Me.mapControl, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.imageCollection1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.mapControl), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.imageCollection1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' mapControl
@@ -52,7 +54,7 @@
             ' imageCollection1
             ' 
             Me.imageCollection1.ImageSize = New System.Drawing.Size(40, 40)
-            Me.imageCollection1.ImageStream = (DirectCast(resources.GetObject("imageCollection1.ImageStream"), DevExpress.Utils.ImageCollectionStreamer))
+            Me.imageCollection1.ImageStream = CType((resources.GetObject("imageCollection1.ImageStream")), DevExpress.Utils.ImageCollectionStreamer)
             Me.imageCollection1.Images.SetKeyName(0, "Ship.png")
             ' 
             ' Form1
@@ -63,16 +65,15 @@
             Me.Controls.Add(Me.mapControl)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.mapControl, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.imageCollection1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.mapControl), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.imageCollection1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private mapControl As DevExpress.XtraMap.MapControl
+
         Private imageCollection1 As DevExpress.Utils.ImageCollection
     End Class
 End Namespace
-
